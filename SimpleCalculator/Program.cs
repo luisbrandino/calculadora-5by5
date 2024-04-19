@@ -1,6 +1,12 @@
 ﻿Console.Write("Informe o primeiro número: ");
 float a = float.Parse(Console.ReadLine());
 
+while (a == 5)
+{
+    Console.Write("Primeiro número não pode ser cinco, digite outro valor: ");
+    a = float.Parse(Console.ReadLine());
+}
+
 Console.Write("Informe o segundo número: ");
 float b = float.Parse(Console.ReadLine());
 
