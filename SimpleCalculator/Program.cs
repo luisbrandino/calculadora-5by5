@@ -48,13 +48,20 @@ while (true)
 
 float result;
 
-if (operation == '+')
-    result = a + b + c + d;
-else if (operation == '-')
-    result = a - b - c - d;
-else if (operation == '*')
-    result = a * b * c * d;
-else 
-    result = a / b / c / d;
+switch (operation)
+{
+    case '+':
+        result = a + b + c + d;
+        break;
+    case '-':
+        result = a - b - c - d;
+        break;
+    case '*':
+        result = a * b * c * d;
+        break;
+    default:
+        result = a / b / c / d;
+        break;
+}
 
 Console.WriteLine($"({a}) {operation} ({b}) {operation} ({c}) {operation} ({d}) = {result}");
